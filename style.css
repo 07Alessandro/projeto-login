@@ -1,0 +1,160 @@
+
+
+@charset "UTF-8";
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body, html {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.842), #ff7d10);;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     overflow: hidden;  /*<< transbordar  */
+    background-color: white;
+    width: 250px;
+    height: 510px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.596);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login #imagem {
+    display: block;
+    background: #5f2c82 url(../imagem/download.jpeg) no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
+}
+
+section#login #formulario {
+    display: block;
+    padding: 10px;
+}
+
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario p {
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+form div.campo {
+    position: relative;
+   
+
+
+}
+
+label {
+    position: absolute;
+    padding: 0 5px;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    top: 20%;
+    left: 7em;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.campo span {
+position: absolute;
+left: 10px;
+top: 5px;
+}
+
+.campo.login input {
+    border: 2px solid #fc7303;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.campo.senha input {
+    border: 2px solid #fc7303;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.campo.login input:focus~label, .campo.login input:valid~label {
+    top:-20% ;
+    left: 20%;
+    background-color: white;
+    font-size: 0.7rem;
+}
+
+.campo.senha input:focus~label, .campo.senha input:valid~label {
+    top:-20% ;
+    left: 20%;
+    background-color: white;
+    font-size: 0.7rem;
+}
+
+form input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.849), #fc7303  );
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+
+form a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #fc7303;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+form a.botao:hover {
+    background-color: #ff953e;
+}
+
+
+
+form a.botao span {
+    
+    font-size: 0.9em;
+}
